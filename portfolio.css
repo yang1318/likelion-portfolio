@@ -36,13 +36,19 @@ h2 {
     font-weight: bold;
 }
 
-.about-me-text {
-    font-size:10px;
+.introduce-code {
+    background-color: rgb(215, 215, 214);
+    font-size:12px;
     line-height: 16px;
 }
 
+.introduce-descrition {
+    word-wrap: break-word;
+    font-size:12px;
+}
+
 .mainbox {
-    width: 610px;
+    width: 680px;
     padding: 30px;
     margin: 30px;
     margin-right: auto;
@@ -51,30 +57,16 @@ h2 {
     box-shadow: 0 1px 20px 0 rgba(0, 0, 0, 0.1);
 }
 
+.aboutme-list { 
+    padding-left: 30px;
+}
+
 .title-box {
     text-align: right;
 }
 
 section {
     margin-bottom:24px;
-}
-
-.float-wrap {
-    overflow: hidden;
-}
-
-.title-text {
-    font-size:11px;
-    font-weight: bold;
-    color: #282828;
-    float: left;
-}
-
-.year-text{
-    font-size:11px;
-    font-weight: bold;
-    color: #282828;
-    float: right;
 }
 
 .desc-text {
@@ -92,14 +84,44 @@ section {
     height:12px;
 }
 
-.sns-wrap {
-    text-align:right;
-}
-
 footer {
     text-align: center;
     background-color: #1e1e1e;
     padding: 20px;
     font-size: 12px;
     color: #919191;
+}
+
+.card {
+    width: 300px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 2px 20px gray;
+    overflow: hidden;
+    
+    position: relative;
+    margin: 30px;
+
+    transition: 0.3s
+}
+
+.card-banner img {
+    position: absolute;
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+}
+
+.card-body {
+    margin: 240px 15px 15px 15px;
+}
+
+.card-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card:hover {
+    transform: translateY(-10px);
 }
